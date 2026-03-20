@@ -843,6 +843,249 @@
       transform: translate(4px, -4px);
     }
 
+    /* ─────────── FLAGSHIP PROJECT ─────────── */
+    .proj-flagship {
+      margin-bottom: 64px;
+      padding: 48px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--white);
+      position: relative;
+      overflow: hidden;
+      transition: box-shadow .4s var(--ease);
+    }
+
+    .proj-flagship:hover {
+      box-shadow: 0 24px 64px rgba(13, 13, 12, .06);
+    }
+
+    .proj-flagship::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), rgba(17, 17, 255, .2), transparent);
+    }
+
+    .proj-flagship-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+
+    .proj-flagship-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-s);
+      padding: 6px 16px;
+      border-radius: 100px;
+      border: 1px solid rgba(17, 17, 255, .12);
+      margin-bottom: 16px;
+    }
+
+    .proj-flagship-num {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--sub);
+      padding-top: 6px;
+    }
+
+    .proj-flagship-name {
+      font-family: var(--serif);
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 300;
+      letter-spacing: -2px;
+      line-height: 1.05;
+      margin-bottom: 4px;
+    }
+
+    .proj-flagship-subtitle {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--sub);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .proj-flagship-desc {
+      font-size: 15px;
+      line-height: 1.85;
+      color: var(--ink2);
+      max-width: 640px;
+      margin-bottom: 40px;
+    }
+
+    .proj-flagship-desc strong {
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    /* Flagship Stats */
+    .proj-flagship-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+
+    .pf-stat {
+      background: var(--bg);
+      padding: 24px 20px;
+      text-align: center;
+    }
+
+    .sec-alt .pf-stat {
+      background: var(--white);
+    }
+
+    .pf-stat-n {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 36px;
+      line-height: 1;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .pf-stat-l {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--sub);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    /* Flagship Architecture */
+    .proj-flagship-arch {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .pf-arch-card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--bg);
+      transition: border-color .25s, transform .25s var(--ease);
+    }
+
+    .sec-alt .pf-arch-card {
+      background: rgba(242, 240, 234, .5);
+    }
+
+    .pf-arch-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .pf-arch-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--accent);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .pf-arch-title {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: -.3px;
+      margin-bottom: 8px;
+    }
+
+    .pf-arch-tech {
+      font-size: 12px;
+      color: var(--sub);
+      line-height: 1.7;
+    }
+
+    /* Flagship Features */
+    .proj-flagship-features {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+
+    .pf-feature {
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      font-size: 12.5px;
+      color: var(--ink2);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all .25s var(--ease);
+      background: var(--bg);
+    }
+
+    .sec-alt .pf-feature {
+      background: rgba(242, 240, 234, .5);
+    }
+
+    .pf-feature:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .pf-feature-icon {
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    /* Flagship Stack Tags */
+    .proj-flagship-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 36px;
+    }
+
+    .pf-stack-tag {
+      font-family: var(--mono);
+      font-size: 10px;
+      padding: 5px 14px;
+      border: 1px solid var(--line);
+      color: var(--sub);
+      border-radius: 100px;
+      letter-spacing: .04em;
+      transition: all .2s;
+    }
+
+    .pf-stack-tag:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-s);
+    }
+
+    /* Flagship Links */
+    .proj-flagship-links {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
     /* ─────────── EXPERIENCE ─────────── */
     .exp-list {}
 
@@ -1089,7 +1332,7 @@
     }
 
     /* ─────────── SCROLL REVEAL (GSAP READY) ─────────── */
-    .r, .r-l, .r-r, .proj-item, .exp-item {
+    .r, .r-l, .r-r, .proj-item, .exp-item, .proj-flagship {
       visibility: hidden; /* Prevent flash of unstyled content before GSAP takes over */
     }
 
@@ -1150,6 +1393,28 @@
         display: none;
       }
 
+      .proj-flagship {
+        padding: 32px 24px;
+      }
+
+      .proj-flagship-stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .proj-flagship-arch {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .proj-flagship-features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      }
+
+      .proj-flagship-header {
+        flex-direction: column;
+      }
+
       footer {
         flex-direction: column;
         gap: 10px;
@@ -1191,6 +1456,25 @@
         width: 100%;
         justify-content: center;
         text-align: center;
+      }
+
+      .proj-flagship-stats {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .proj-flagship-features {
+        grid-template-columns: 1fr;
+      }
+
+      .proj-flagship-links {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .proj-flagship-links .btn-primary,
+      .proj-flagship-links .btn-secondary {
+        width: 100%;
+        justify-content: center;
       }
     }
 
@@ -1390,10 +1674,118 @@
   <section class="sec sec-alt" id="projects">
     <div class="sec-label r">03 — Projects</div>
     <h2 class="sec-title r d1">Selected<br><em>work.</em></h2>
+
+    <!-- ★ FLAGSHIP: UNIFY -->
+    <div class="proj-flagship r">
+      <div class="proj-flagship-header">
+        <div>
+          <div class="proj-flagship-badge">★ Flagship Project</div>
+          <div class="proj-flagship-name">UNIFY</div>
+          <div class="proj-flagship-subtitle">Society Management System</div>
+        </div>
+        <div class="proj-flagship-num">01</div>
+      </div>
+
+      <div class="proj-flagship-desc">
+        A <strong>full-stack multi-tenant platform</strong> for managing residential housing societies.
+        Built for <strong>admins, residents, guards, and staff</strong> — it handles everything from
+        QR-based gate passes and visitor logs to maintenance billing, SOS alerts with GPS,
+        and live CCTV streaming via WebRTC. Structured as a <strong>monorepo</strong> with three distinct parts.
+      </div>
+
+      <!-- Architecture Cards -->
+      <div class="proj-flagship-arch">
+        <div class="pf-arch-card">
+          <div class="pf-arch-label">Backend API</div>
+          <div class="pf-arch-title">Node.js + Express</div>
+          <div class="pf-arch-tech">PostgreSQL (Neon) · JWT Auth · Socket.IO · WebRTC · Razorpay · Firebase FCM · node-cron</div>
+        </div>
+        <div class="pf-arch-card">
+          <div class="pf-arch-label">Admin Dashboard</div>
+          <div class="pf-arch-title">Next.js Web App</div>
+          <div class="pf-arch-tech">React · TypeScript · Tailwind CSS · Radix UI · Axios</div>
+        </div>
+        <div class="pf-arch-card">
+          <div class="pf-arch-label">Mobile App</div>
+          <div class="pf-arch-title">React Native (Expo)</div>
+          <div class="pf-arch-tech">TypeScript · NativeWind · React Query · Zod · Axios</div>
+        </div>
+      </div>
+
+      <!-- Key Stats -->
+      <div class="proj-flagship-stats">
+        <div class="pf-stat">
+          <div class="pf-stat-n pf-counter">23</div>
+          <div class="pf-stat-l">API Modules</div>
+        </div>
+        <div class="pf-stat">
+          <div class="pf-stat-n pf-counter">4</div>
+          <div class="pf-stat-l">User Roles</div>
+        </div>
+        <div class="pf-stat">
+          <div class="pf-stat-n pf-counter">23+</div>
+          <div class="pf-stat-l">Database Tables</div>
+        </div>
+        <div class="pf-stat">
+          <div class="pf-stat-n pf-counter">3</div>
+          <div class="pf-stat-l">App Platforms</div>
+        </div>
+      </div>
+
+      <!-- Key Features -->
+      <div class="proj-flagship-features">
+        <div class="pf-feature"><span class="pf-feature-icon">🔐</span> QR Gate Passes</div>
+        <div class="pf-feature"><span class="pf-feature-icon">👥</span> Visitor Tracking</div>
+        <div class="pf-feature"><span class="pf-feature-icon">🚨</span> SOS Alerts + GPS</div>
+        <div class="pf-feature"><span class="pf-feature-icon">💰</span> Razorpay Payments</div>
+        <div class="pf-feature"><span class="pf-feature-icon">📹</span> Live CCTV (WebRTC)</div>
+        <div class="pf-feature"><span class="pf-feature-icon">🔔</span> Push Notifications</div>
+        <div class="pf-feature"><span class="pf-feature-icon">🏠</span> Maintenance Billing</div>
+        <div class="pf-feature"><span class="pf-feature-icon">📢</span> Emergency Broadcasts</div>
+        <div class="pf-feature"><span class="pf-feature-icon">📊</span> Admin Dashboard</div>
+        <div class="pf-feature"><span class="pf-feature-icon">🗳️</span> Polls & Voting</div>
+        <div class="pf-feature"><span class="pf-feature-icon">📦</span> Delivery Tracking</div>
+        <div class="pf-feature"><span class="pf-feature-icon">🅿️</span> Parking Management</div>
+      </div>
+
+      <!-- Full Tech Stack -->
+      <div class="proj-flagship-stack">
+        <span class="pf-stack-tag">Node.js</span>
+        <span class="pf-stack-tag">Express</span>
+        <span class="pf-stack-tag">PostgreSQL</span>
+        <span class="pf-stack-tag">Next.js</span>
+        <span class="pf-stack-tag">React</span>
+        <span class="pf-stack-tag">React Native</span>
+        <span class="pf-stack-tag">Expo</span>
+        <span class="pf-stack-tag">TypeScript</span>
+        <span class="pf-stack-tag">Socket.IO</span>
+        <span class="pf-stack-tag">WebRTC</span>
+        <span class="pf-stack-tag">Razorpay</span>
+        <span class="pf-stack-tag">Firebase FCM</span>
+        <span class="pf-stack-tag">JWT</span>
+        <span class="pf-stack-tag">Tailwind CSS</span>
+        <span class="pf-stack-tag">Radix UI</span>
+        <span class="pf-stack-tag">NativeWind</span>
+        <span class="pf-stack-tag">React Query</span>
+        <span class="pf-stack-tag">Zod</span>
+        <span class="pf-stack-tag">Nodemailer</span>
+        <span class="pf-stack-tag">Multer</span>
+        <span class="pf-stack-tag">node-cron</span>
+      </div>
+
+      <!-- Links -->
+      <div class="proj-flagship-links">
+        <a href="https://github.com/mohammedfaiz3768/society-management-system" target="_blank" class="btn-primary">
+          <span>View on GitHub ↗</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Other Projects -->
     <div class="proj-list">
 
-      <a class="proj-item r" href="https://fallah-kappa.vercel.app" target="_blank">
-        <div class="proj-num">01</div>
+      <a class="proj-item" href="https://fallah-kappa.vercel.app" target="_blank">
+        <div class="proj-num">02</div>
         <div class="proj-body">
           <div class="proj-flag">● Featured</div>
           <div class="proj-name">GUIDE</div>
@@ -1411,8 +1803,8 @@
         <div class="proj-arrow">↗</div>
       </a>
 
-      <a class="proj-item r d1" href="https://bahwan-motors.vercel.app" target="_blank">
-        <div class="proj-num">02</div>
+      <a class="proj-item" href="https://bahwan-motors.vercel.app" target="_blank">
+        <div class="proj-num">03</div>
         <div class="proj-body">
           <div class="proj-flag">● Featured</div>
           <div class="proj-name">Bahwan Motors</div>
@@ -1430,26 +1822,7 @@
         <div class="proj-arrow">↗</div>
       </a>
 
-      <a class="proj-item r d2" href="https://github.com/mohammedfaiz3768/society-management-system" target="_blank">
-        <div class="proj-num">03</div>
-        <div class="proj-body">
-          <div class="proj-name">Society Management System</div>
-          <div class="proj-desc">
-            A comprehensive multi-tenant society management platform including a backend API,
-            admin web portal, and mobile app — covering resident management, billing, and announcements.
-          </div>
-          <div class="proj-tags">
-            <span class="proj-tag">Node.js</span>
-            <span class="proj-tag">React</span>
-            <span class="proj-tag">MongoDB</span>
-            <span class="proj-tag">REST API</span>
-            <span class="proj-tag">Mobile</span>
-          </div>
-        </div>
-        <div class="proj-arrow">↗</div>
-      </a>
-
-      <a class="proj-item r d3" href="https://unify-node.vercel.app" target="_blank">
+      <a class="proj-item" href="https://unify-node.vercel.app" target="_blank">
         <div class="proj-num">04</div>
         <div class="proj-body">
           <div class="proj-name">Unify Node</div>
@@ -1466,7 +1839,7 @@
         <div class="proj-arrow">↗</div>
       </a>
 
-      <a class="proj-item r d4" href="https://github.com/mohammedfaiz3768/resume-builder" target="_blank">
+      <a class="proj-item" href="https://github.com/mohammedfaiz3768/resume-builder" target="_blank">
         <div class="proj-num">05</div>
         <div class="proj-body">
           <div class="proj-name">Resume Builder</div>
@@ -1715,6 +2088,25 @@
         );
       });
 
+      // Flagship Project Reveal
+      const flagship = document.querySelector(".proj-flagship");
+      if (flagship) {
+        gsap.fromTo(flagship,
+          { autoAlpha: 0, y: 60 },
+          {
+            autoAlpha: 1,
+            y: 0,
+            duration: 1,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: flagship,
+              start: "top 85%",
+              toggleActions: "play none none reverse"
+            }
+          }
+        );
+      }
+
       // Projects Stagger Reveal
       const projContainer = document.querySelector(".proj-list");
       if (projContainer) {
@@ -1859,7 +2251,7 @@
 
     /* ── NUMBER COUNTER ANIMATION ── */
     (function () {
-      const counters = document.querySelectorAll('.an-n');
+      const counters = document.querySelectorAll('.an-n, .pf-counter');
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
